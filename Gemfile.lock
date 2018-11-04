@@ -43,6 +43,8 @@ GEM
     builder (3.2.3)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    enumerize (2.2.2)
+      activesupport (>= 3.2)
     erubi (1.7.1)
     ffi (1.9.25)
     globalid (0.4.1)
@@ -126,6 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  enumerize
   listen (>= 3.0.5, < 3.2)
   mongoid
   puma (~> 3.7)
