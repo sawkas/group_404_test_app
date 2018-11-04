@@ -2,6 +2,8 @@ class Message
   include Mongoid::Document
   extend Enumerize
 
+  attr_accessor :params_errors
+
   field :text,           type: String
   field :service,        type: String
   field :uid,            type: String

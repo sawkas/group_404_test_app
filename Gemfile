@@ -6,6 +6,8 @@ gem 'puma', '~> 3.7'
 gem 'mongoid'
 
 gem 'enumerize'
+gem 'active_model_serializers'
+gem 'dry-validation'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
