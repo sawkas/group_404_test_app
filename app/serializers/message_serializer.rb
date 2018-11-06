@@ -1,6 +1,6 @@
 class MessageSerializer < ActiveModel::Serializer
   attributes :id, :text, :service, :uid
-  attributes :sending_status, :sending_errors, :send_in, :sent_at
+  attributes :sending_status, :sending_error, :send_in, :sent_at
   attributes :params_errors
 
   def id

@@ -9,6 +9,8 @@ gem 'enumerize'
 gem 'active_model_serializers'
 gem 'dry-validation'
 
+gem 'sidekiq'
+
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 
