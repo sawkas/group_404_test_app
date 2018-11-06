@@ -1,4 +1,7 @@
 class MessagesController < ActionController::API
+  include ActionController::HttpAuthentication::Basic::ControllerMethods # for basic auth in api controller
+  http_basic_authenticate_with name: ENV['HTTP_AUTHENTICATION_NAME'], password: ENV['HTTP_AUTHENTICATION_PASSWORD']
+
   def send_message
     render json: messages_params.map{ |mp| MessageSender.new(mp).send }
   end
@@ -8,6 +11,7 @@ class MessagesController < ActionController::API
   end
 
   def message_info
+    render json: Message.find(params[:message_id])
   end
 
   private

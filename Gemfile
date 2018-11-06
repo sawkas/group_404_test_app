@@ -11,6 +11,8 @@ gem 'dry-validation'
 
 gem 'sidekiq'
 
+gem 'dotenv-rails'
+
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 
